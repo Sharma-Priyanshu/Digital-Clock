@@ -1,0 +1,257 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #3d087b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-container{
+    margin: 20px 6%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.grid-container-1{
+    width: 45%;
+    height: 90vh;
+    display: grid;
+}
+.grid-container-2{
+    width: 45%;
+    height: 80vh;
+    display: grid;
+}
+
+.grid-item{
+    border-radius: 8px;
+}
+
+#clock-pic{
+    height: 70px;
+    width: 60%;
+    background-image: url(./Assets/clock_logo.png);
+    background-repeat: no-repeat;
+    background-size: 70% 100%;
+    border: none;
+}
+
+#left-second-container{
+    height: 45vh;
+    border: none;
+    overflow: auto;
+}
+
+.left-second-container-inner{
+    height: 32%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+
+.div1{
+    width: 20%;
+    height: 100%;
+    background-image: url(./Assets/wake_up.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 50px;
+}
+
+.div2{
+    width: 20%;
+    height: 100%;
+    background-image: url(./Assets/lunch_time.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 50px;
+}
+
+.div3{
+    width: 20%;
+    height: 100%;
+    background-image: url(./Assets/tea.png);
+    background-repeat: no-repeat;
+    background-size: 60% 60%;
+    background-position: center;
+    margin-right: 50px;
+}
+.div4{
+    width: 20%;
+    height: 100%;
+    background-image: url(./Assets/nap_time.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 50px;
+}
+.div5{
+    width: 20%;
+    height: 100%;
+    background-image: url(./Assets/dinner.png);
+    background-repeat: no-repeat;
+    background-size: 40% 40%;
+    background-position: center;
+    margin-right: 50px;
+}
+
+.select-time-label{
+    font-size: 1.15rem;
+}
+
+.select-time{
+    margin-left: 50px;
+}
+
+
+#set-time{
+    width: 40%;
+    height: 40px;
+    text-align: center ;
+    padding-top: 8px;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    transition: transform .4s ease-in-out;
+    background-image: linear-gradient(to right bottom,rgb(95, 25, 175),rgb(182, 31, 187),rgb(218, 98, 118));
+}
+
+#set-time:hover{
+    background-image: linear-gradient(to left bottom,rgb(95, 25, 175),rgb(182, 31, 187),rgb(218, 98, 118));
+}
+#set-time:active{
+     transform: scale(1.1,1.1);
+}
+
+#digital-clock{
+    height: 10vh;
+    background-color: white;
+    position: relative;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.clock-1{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    
+}
+
+.hours-text{
+    margin: 0;
+}
+
+.clock-2{
+    width: 20%;
+    height: 80%;
+    color: blueviolet;
+    background-color: pink;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.clock-3{
+    width: 20%;
+    height: 80%;
+    color: blueviolet;
+    background-color: pink;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.clock-4{
+    width: 20%;
+    height: 80%;
+    color: blueviolet;
+    background-color: pink;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.clock-5{
+    width: 10%;
+    height: 80%;
+    background-image:linear-gradient(rgb(129, 17, 235),rgb(236, 112, 133)) ;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#lower-block-1{
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(245, 227, 227);
+    top: 7px;
+    border-radius: 10px;
+    opacity: 0.5;
+    margin-left:10%;
+    z-index: -1;
+}
+#lower-block-2{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(241, 219, 235);
+    top: 14px;
+    border-radius: 10px;
+    opacity: 0.3;
+    margin-left:20%;
+    z-index: -2;
+}
+
+.right-second-container{
+    height: 75vh;
+    margin-top: 15px;
+}
+
+#greeting-text-container{
+ background-color: white;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#greeting-text{
+    opacity: .55;
+    color: blue;
+}
+
+#greeting-image{
+    height: 84%;
+    margin: 8px;
+    background-color: white;
+    background-image: url(./Assets/welcome.png);
+    background-size: 100% 100%;
+}
+
+#schedule{
+    height: 15vh;
+    /* background-color: white; */
+}
